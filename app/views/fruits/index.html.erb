@@ -1,0 +1,14 @@
+<h1>フルーツ一覧</h1>
+
+<table>
+  <tr>
+    <th>名前</th>
+    <th>値段</th>
+  </tr>
+<% @fruits.each do |fruit| %>
+  <tr>
+    <td><%= fruit.name %></td>
+    <td><%= fruit.price %></td>
+  </tr>
+<% end %>
+</table>
